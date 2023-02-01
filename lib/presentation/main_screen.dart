@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../foundations/index.dart';
 import 'exploration_screen.dart';
+import 'notification_screen.dart';
+import 'personal_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -12,20 +14,16 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int selectedIndex = 0;
-  static List<Widget> widgetOptions = <Widget>[
-    const ExplorationScreen(),
-    const Text(
-      'Index 1: Business',
-    ),
-    const Text(
+  static List<Widget> widgetOptions = const <Widget>[
+    ExplorationScreen(),
+    NotificationScreen(),
+    Text(
       'Index 2: School',
     ),
-    const Text(
+    Text(
       'Index 3: Settings',
     ),
-    const Text(
-      'Index 4: Settings',
-    ),
+    PersonalScreen(),
   ];
 
   void _onItemTapped(int index) {

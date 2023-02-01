@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'foundations/index.dart';
 import 'presentation/main_screen.dart';
 
 void main() {
@@ -12,15 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'RCM',
-      theme: ThemeData(
-        textTheme: MY_THEME,
-        primaryColor: Colors.blue,
-        backgroundColor: BACKGROUND_COLOR,
-      ),
-      home: const MainScreen(),
+      home: MainScreen(),
     );
   }
 }

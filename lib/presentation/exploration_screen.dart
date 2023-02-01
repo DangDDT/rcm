@@ -23,6 +23,7 @@ class _ExplorationScreenState extends State<ExplorationScreen> {
           HighlightFeatureView(),
           HighlightLocationSelfDrivingCarView(),
           HighlightLocationCarWithDriverView(),
+          PostRentalCarView(),
         ],
       ),
     );

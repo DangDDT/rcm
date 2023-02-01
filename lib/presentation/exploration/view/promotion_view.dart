@@ -10,7 +10,7 @@ class PromotionView extends StatelessWidget {
     return Column(
       children: const [
         ListTile(
-          title: Text("ƯU ĐÃI HIỆN HÀNH", style: ),
+          title: Text("ƯU ĐÃI HIỆN HÀNH"),
         ),
         PromotionListCard(),
       ],

@@ -13,7 +13,7 @@ class InsuranceCard extends StatelessWidget {
       width: 150,
       padding: const EdgeInsets.symmetric(horizontal: DEFAULT_PADDING),
       margin: const EdgeInsets.symmetric(horizontal: DEFAULT_MARGIN - 15),
-      decoration: const BoxDecoration(color: BACKGROUND_COLOR),
+      decoration: BoxDecoration(color: BACKGROUND_COLOR, borderRadius: DEFAULT_BORDER),
       child: const Center(child: Text("Hình ảnh")),
     );
   }
