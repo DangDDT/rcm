@@ -4,6 +4,8 @@ import '../../foundations/index.dart';
 import 'exploration_screen.dart';
 import 'notification_screen.dart';
 import 'personal_screen.dart';
+import 'support_screen.dart';
+import 'trip_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -17,12 +19,8 @@ class _MainScreenState extends State<MainScreen> {
   static List<Widget> widgetOptions = const <Widget>[
     ExplorationScreen(),
     NotificationScreen(),
-    Text(
-      'Index 2: School',
-    ),
-    Text(
-      'Index 3: Settings',
-    ),
+    TripScreen(),
+    SupportScreen(),
     PersonalScreen(),
   ];
 
